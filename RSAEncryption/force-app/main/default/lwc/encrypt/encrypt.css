@@ -1,0 +1,24 @@
+.keys{
+                display: flex;
+                justify-content:space-between;
+}
+.boxes {
+            display: flex;
+            margin: 3em auto;
+        }
+
+        button {
+            flex-grow: 1;
+        }
+
+        label {
+            display: block;
+        }
+
+        .box div {
+            display: flex;
+        }
+.key{
+    width: 50% !important;
+    --sds-c-textarea-sizing-min-height: 200px !important;
+}

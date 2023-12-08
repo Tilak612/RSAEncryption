@@ -1,0 +1,50 @@
+<template>
+	<lightning-card variant="Narrow" title="RSA Encryption" icon-name="action:password_unlock">
+		<div style="display: flex;justify-content: center;">
+			<template if:true={isErrorScreen}>
+				Oops! It seems like there's an issue loading the static resource. Please refresh the page to ensure
+				everything loads smoothly.
+			</template>
+			<template if:false={isErrorScreen}>
+				<div>
+					<div class="keys"  >
+                        <lightning-textarea   class="key slds-m-around_medium" lwc:ref='publickey' name="Public Key" label="Public Key with Encryption"
+								value={publickey} onchange={handlePublickey} ></lightning-textarea>
+							<lightning-textarea class="key slds-m-around_medium" lwc:ref='privatekey' name="Private Key" label="Private Key with Description"
+								value={privateKey} onchange={handlePrivatekey}></lightning-textarea>
+					</div>
+					<div class="boxes">
+						<div class="box">
+							<label for="input">Text to encrypt</label>
+							<div>
+								<textarea class="input" id="input" name="input" type="text" rows="5" cols="30">Hello World!!</textarea>
+								<button id="encrypt" onclick={handleEncryption}>
+                    ➜
+                    <br /> ENCRYPT
+                </button>
+							</div>
+						</div>
+						<div class="box">
+							<label for="encrypted">Encryption Text</label>
+							<div>
+								<textarea class="encrypted" id="encrypted" name="encrypted" type="text" rows="5" cols="30"></textarea>
+								<button id="decrypt" onclick={handleDecryption}>
+                    ➜
+                    <br /> DECRYPT
+                </button>
+							</div>
+						</div>
+						<div class="box">
+							<label for="decrypted">Decrypted result</label>
+							<div>
+								<textarea class="decrypted" id="decrypted" name="decrypted" type="text" rows="5" cols="30"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</template>
+
+		</div>
+	</lightning-card>
+</template>
