@@ -36,7 +36,7 @@ The RSA Encryption LWC component offers a secure solution for performing RSA enc
 
 ## Author
 <p align="center">
-  <a href="https://github.com/Tilak612"><img src="https://img.shields.io/badge/Author-Tilak%20Padole-blueviolet?style=flat-square"></a>
+  <a href="https://github.com/Tilak612"><img src="https://avatars.githubusercontent.com/u/51970767?s=400&u=887ca3b51b41c36d8f30842ddde884dc74ab4ef3&v=4"></a>
   <a href="https://www.linkedin.com/in/tilak-padole"><img src="https://img.shields.io/badge/LinkedIn-Tilak%20Padole-blue?style=flat-square"></a>
 </p>
 
