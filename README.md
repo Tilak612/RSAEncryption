@@ -42,7 +42,7 @@ The RSA Encryption LWC component offers a secure solution for performing RSA enc
 
 ## Contributing
 
-Contributions are welcome! If you would like to contribute to the development of Salesforce Video Caller
+Contributions are welcome! If you would like to contribute to the development of RSAEncryption
 
 # Show your support
 
